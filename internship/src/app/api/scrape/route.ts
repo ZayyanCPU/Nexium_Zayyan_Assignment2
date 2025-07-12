@@ -27,7 +27,7 @@ function checkRateLimit(userAgent: string): boolean {
 }
 
 function extractDetailedContent($: cheerio.CheerioAPI) {
-  let content: string[] = [];
+  const content: string[] = [];
   const roots = $('main, .main, .content, .post, .article, .entry, body').toArray();
   roots.forEach((el) => {
     $(el).children().each((_, child) => {

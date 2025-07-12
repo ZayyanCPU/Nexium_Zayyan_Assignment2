@@ -12,7 +12,7 @@ export default function Home() {
   const [urdu, setUrdu] = useState("");
   const [fullText, setFullText] = useState("");
   const [textLength, setTextLength] = useState(0);
-  const [mongoId, setMongoId] = useState("");
+  const [mongoId] = useState("");
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
   const [info, setInfo] = useState("");
@@ -26,7 +26,6 @@ export default function Home() {
     setUrdu("");
     setFullText("");
     setTextLength(0);
-    setMongoId("");
 
     try {
       const response = await fetch('/api/scrape', {
@@ -53,11 +52,10 @@ export default function Home() {
       setUrdu(urduTranslation);
       setFullText(data.fullText);
       setTextLength(data.textLength || 0);
-      setMongoId(data.mongoId || "");
       setInfo(`✅ Full text (${data.textLength || 0} characters) successfully stored in MongoDB with ID: ${data.mongoId || 'N/A'}`);
     
 
-    } catch (error) {
+    } catch {
       setError('Failed to connect to server. Please try again.');
     } finally {
       setLoading(false);

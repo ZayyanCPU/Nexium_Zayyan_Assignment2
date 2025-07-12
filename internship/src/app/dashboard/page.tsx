@@ -46,7 +46,7 @@ export default function Dashboard() {
         const supabaseData = await supabaseResponse.json();
         setSupabaseData(supabaseData);
       }
-    } catch (err) {
+    } catch {
       setError("Failed to fetch data");
     } finally {
       setLoading(false);
@@ -149,6 +149,12 @@ export default function Dashboard() {
             </div>
           </div>
         </div>
+
+        <footer className="mt-8 text-center space-y-4">
+          <div className="text-xs text-gray-300 bg-white/10 px-4 py-2 rounded-full backdrop-blur-md border border-white/20">
+            Made by <span className="font-semibold text-purple-400">Zayyan</span>
+          </div>
+        </footer>
       </div>
     </div>
   );
