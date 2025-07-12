@@ -12,7 +12,6 @@ export default function Home() {
   const [urdu, setUrdu] = useState("");
   const [fullText, setFullText] = useState("");
   const [textLength, setTextLength] = useState(0);
-  const [mongoId] = useState("");
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
   const [info, setInfo] = useState("");
