@@ -1,6 +1,10 @@
 import { MongoClient } from 'mongodb'
 
-const uri = "mongodb+srv://zayyanahmad765:EeVaIXsHI1qMKyOI@fulltext.ddmvk3a.mongodb.net/?retryWrites=true&w=majority&appName=fulltext"
+const uri = process.env.MONGODB_URI
+if (!uri) {
+  throw new Error('Please define the MONGODB_URI environment variable inside .env.local')
+}
+
 const options = {}
 
 let client
