@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { Card } from "@/components/ui/card";
+import Link from "next/link";
 
 interface MongoDocument {
   _id: string;
@@ -70,13 +71,13 @@ export default function Dashboard() {
     <div className="min-h-screen bg-gradient-to-br from-black via-gray-900 to-black text-white p-8">
       <div className="max-w-6xl mx-auto">
         <div className="flex justify-end pt-2 pr-2 mb-4">
-          <a
+          <Link
             href="/"
             className="inline-block px-4 py-2 rounded-lg bg-blue-600 hover:bg-blue-700 text-white font-semibold shadow-lg transition-all duration-200"
             style={{ textDecoration: 'none' }}
           >
             ← Back
-          </a>
+          </Link>
         </div>
         <h1 className="text-3xl font-bold mb-8">Database Dashboard</h1>
         
