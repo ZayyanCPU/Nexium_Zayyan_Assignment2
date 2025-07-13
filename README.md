@@ -13,11 +13,11 @@ A modern web application that scrapes content from websites, generates AI-powere
 ![Main Application - Part 2](internship/p2.png)
 
 ### URL Input and Processing
-![URL Input and Processing](p3.png)
+![URL Input and Processing](internship/p3.png)
 
 ### Database Dashboard
-![Database Dashboard - Part 1](p4.png)
-![Database Dashboard - Part 2](p5.png)
+![Database Dashboard - Part 1](internship/p4.png)
+![Database Dashboard - Part 2](internship/p5.png)
 
 ## 🚀 Features
 
