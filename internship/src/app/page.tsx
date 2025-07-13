@@ -107,7 +107,7 @@ export default function Home() {
           <Card className="p-4 border-0 shadow-2xl bg-white/10 backdrop-blur-md mb-4 border border-white/20">
             <h3 className="text-sm font-semibold text-white mb-2 flex items-center">
               <span className="w-2 h-2 bg-green-400 rounded-full mr-2 animate-pulse"></span>
-              Permitted Websites
+              Available Websites To Scrape
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-1">
               {ALLOWED_WEBSITES.map((website, index) => (
