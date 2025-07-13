@@ -187,105 +187,14 @@ For ethical considerations, scraping is limited to these approved domains:
 - `https://nexium-zayyan-assignment1.vercel.app/` - Previous assignment
 - `https://quotes.toscrape.com/` - Public quotes collection
 
-### ⚡ Performance Tips
-- **Rate Limiting**: Maximum 5 requests per minute per user
-- **Caching**: Results are cached for better performance
-- **Error Handling**: Graceful fallbacks for failed requests
-- **Loading States**: Visual feedback during processing
-
 ## 🔒 Security & Ethics
 
 ### 🤝 Ethical Considerations
 - **Limited Scraping**: Only 3 predefined websites allowed for responsible data collection
-- **Respectful Scraping**: Proper user-agent headers and polite crawling
-- **No Sensitive Data**: Only public, accessible content is scraped
-- **Transparency**: Clear indication of data collection practices
-- **User Consent**: Implicit consent through usage of the service
 - **Data Minimization**: Only necessary data is collected and stored
 
 ### 📋 Compliance
 - **Educational Purpose**: Demonstrates ethical web scraping practices
-
-## 📊 API Documentation
-
-### 🔗 Endpoint Overview
-All API endpoints are RESTful and return JSON responses. Base URL: `https://nexium-zayyan-assignment2.vercel.app/api`
-
-### POST `/api/scrape`
-Scrapes website content and stores data in both databases.
-
-**Request Body:**
-```json
-{
-  "url": "https://example.com"
-}
-```
-
-**Response:**
-```json
-{
-  "success": true,
-  "summary": "AI-generated summary...",
-  "urduTranslation": "اردو ترجمہ...",
-  "fullText": "Extracted full text content...",
-  "textLength": 1500,
-  "mongoId": "507f1f77bcf86cd799439011"
-}
-```
-
-**Error Response:**
-```json
-{
-  "error": "This feature is only available for the following websites:",
-  "allowedWebsites": ["https://nexium-zayyan-assignment2.vercel.app/", "..."]
-}
-```
-
-### GET `/api/dashboard/mongodb`
-Retrieves the last 20 MongoDB documents with full text content.
-
-**Response:**
-```json
-[
-  {
-    "_id": "507f1f77bcf86cd799439011",
-    "url": "https://example.com",
-    "fullText": "Full extracted text...",
-    "textLength": 1500,
-    "timestamp": "2024-01-01T00:00:00.000Z",
-    "userAgent": "Mozilla/5.0...",
-    "extractedAt": "2024-01-01T00:00:00.000Z"
-  }
-]
-```
-
-### GET `/api/dashboard/supabase`
-Retrieves the last 20 Supabase records with summaries.
-
-**Response:**
-```json
-[
-  {
-    "id": 1,
-    "url": "https://example.com",
-    "summary": "AI-generated summary...",
-    "time": "2024-01-01T00:00:00.000Z"
-  }
-]
-```
-
-### 📈 Rate Limiting
-- **Limit**: 5 requests per minute per user agent
-- **Headers**: Rate limit information included in response headers
-- **Error**: 429 status code when limit exceeded
-
-### 🔐 Authentication
-Currently, no authentication is required for demo purposes. Production deployments should implement proper authentication.
-
-## 🚀 Deployment & Hosting
-
-### 🌐 Live Deployment
-**Production URL**: [https://nexium-zayyan-assignment2.vercel.app/](https://nexium-zayyan-assignment2.vercel.app/)
 
 ### 📦 Vercel Deployment
 1. **Repository Connection**: Connect your GitHub repository to Vercel
@@ -348,14 +257,6 @@ src/
     └── utils.ts                  # Utility functions
 ```
 
-### 🎨 UI/UX Design System
-- **Glassmorphism**: Modern glass-like design effects
-- **Gradient Backgrounds**: Beautiful color transitions
-- **Responsive Design**: Mobile-first approach
-- **Dark Theme**: Eye-friendly dark color scheme
-- **Smooth Animations**: CSS transitions and micro-interactions
-- **Accessibility**: WCAG compliant design patterns
-
 ### 🔧 Development Best Practices
 - **TypeScript**: Strict type checking for better code quality
 - **ESLint**: Code linting and style enforcement
@@ -363,29 +264,6 @@ src/
 - **Error Boundaries**: Graceful error handling
 - **Loading States**: User feedback during operations
 - **Form Validation**: Client-side and server-side validation
-
-## 📈 Performance & Optimization
-
-### Performance Optimizations
-- **Turbopack**: Fast development builds with instant refresh
-- **Static Generation**: Optimized page loading and SEO
-- **Database Indexing**: Efficient queries with proper indexing
-- **Rate Limiting**: Prevents server overload and abuse
-- **Edge Functions**: Serverless deployment for better performance
-- **Image Optimization**: Automatic image compression and lazy loading
-
-### Monitoring & Analytics
-- **Real-time Database Statistics**: Live monitoring of data operations
-- **Request/Response Logging**: Comprehensive API call tracking
-- **Error Tracking**: Detailed error reporting and debugging
-- **Performance Metrics**: Load times and user experience monitoring
-- **Database Health**: Connection status and query performance
-
-### Scalability Features
-- **Horizontal Scaling**: Ready for traffic spikes
-- **Caching Strategy**: Optimized data retrieval
-- **Connection Pooling**: Efficient database connections
-- **Load Balancing**: Distributed request handling
 
 ## 🤝 Contributing
 
@@ -421,22 +299,6 @@ This project is created for **educational and demonstration purposes** as part o
 - **Ethical Usage**: All web scraping follows ethical guidelines
 - **No Commercial Use**: Not intended for commercial applications
 - **Attribution**: Please credit the original author when using this code
-
----
-
-## 🎉 Acknowledgments & Credits
-
-### 🛠️ Technology Stack
-- **Next.js Team**: Amazing React framework and development experience
-- **Vercel**: Seamless deployment and hosting platform
-- **MongoDB Atlas**: Reliable cloud database hosting
-- **Supabase**: Powerful backend-as-a-service platform
-- **Tailwind CSS**: Beautiful and responsive styling framework
-
-### 🎨 Design & UI
-- **Shadcn/ui**: Beautiful and accessible UI components
-- **Lucide React**: Consistent and beautiful icons
-- **Glassmorphism Design**: Modern visual effects
 
 ---
 
