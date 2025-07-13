@@ -195,15 +195,6 @@ For ethical considerations, scraping is limited to these approved domains:
 
 ## 🔒 Security & Ethics
 
-### 🛡️ Security Features
-- **Environment Variable Protection**: Sensitive data stored securely
-- **Input Validation & Sanitization**: Prevents injection attacks
-- **Rate Limiting**: 5 requests per minute per user to prevent abuse
-- **Error Handling**: Secure error messages without data exposure
-- **CORS Protection**: Cross-origin request security
-- **HTTPS Enforcement**: Secure data transmission
-- **Database Security**: Connection encryption and access controls
-
 ### 🤝 Ethical Considerations
 - **Limited Scraping**: Only 3 predefined websites allowed for responsible data collection
 - **Respectful Scraping**: Proper user-agent headers and polite crawling
@@ -213,9 +204,6 @@ For ethical considerations, scraping is limited to these approved domains:
 - **Data Minimization**: Only necessary data is collected and stored
 
 ### 📋 Compliance
-- **GDPR Ready**: Data protection and privacy considerations
-- **Robots.txt Respect**: Follows website crawling guidelines
-- **Fair Use**: Respects website terms of service
 - **Educational Purpose**: Demonstrates ethical web scraping practices
 
 ## 📊 API Documentation
@@ -317,13 +305,6 @@ MONGODB_URI=mongodb+srv://username:password@cluster.mongodb.net/fulltext?retryWr
 NEXT_PUBLIC_SUPABASE_URL=https://your-project.supabase.co
 NEXT_PUBLIC_SUPABASE_ANON_KEY=your-supabase-anon-key
 ```
-
-### 🚀 Deployment Features
-- **Edge Functions**: Serverless deployment for optimal performance
-- **Global CDN**: Content delivery network for fast loading worldwide
-- **Auto-scaling**: Handles traffic spikes automatically
-- **Zero-downtime**: Seamless updates without service interruption
-- **Analytics**: Built-in performance and usage analytics
 
 ### 🔄 CI/CD Pipeline
 - **GitHub Integration**: Automatic deployment on code changes
@@ -441,29 +422,6 @@ This project is created for **educational and demonstration purposes** as part o
 - **No Commercial Use**: Not intended for commercial applications
 - **Attribution**: Please credit the original author when using this code
 
-## 👨‍💻 Author & Contact
-
-### 🎯 About the Developer
-**Zayyan** - Full Stack Developer & Nexium Intern
-
-**Skills & Expertise:**
-- Frontend Development (React, Next.js, TypeScript)
-- Backend Development (Node.js, API Development)
-- Database Management (MongoDB, Supabase)
-- Web Scraping & Data Processing
-- UI/UX Design & Development
-
-### 📧 Contact Information
-- **GitHub**: [GitHub Profile]
-- **LinkedIn**: [LinkedIn Profile]
-- **Email**: [Email Address]
-- **Portfolio**: [Portfolio Website]
-
-### 🌟 Professional Background
-- **Current Role**: Intern at Nexium
-- **Focus Areas**: Web Development, Data Processing, AI Integration
-- **Interests**: Modern Web Technologies, Ethical AI, Open Source
-
 ---
 
 ## 🎉 Acknowledgments & Credits
@@ -480,28 +438,6 @@ This project is created for **educational and demonstration purposes** as part o
 - **Lucide React**: Consistent and beautiful icons
 - **Glassmorphism Design**: Modern visual effects
 
-### 📚 Learning Resources
-- **Nexium Team**: Mentorship and guidance throughout the internship
-- **Open Source Community**: Continuous learning and improvement
-- **Web Development Community**: Best practices and modern techniques
-
 ---
 
-## 📊 Project Statistics
-
-### 🚀 Development Metrics
-- **Lines of Code**: ~2,000+ lines
-- **Components**: 10+ reusable components
-- **API Endpoints**: 3 RESTful endpoints
-- **Database Collections**: 2 collections (MongoDB + Supabase)
-- **Deployment**: 100% uptime on Vercel
-
-### 📈 Performance Metrics
-- **Page Load Time**: < 2 seconds
-- **API Response Time**: < 500ms
-- **Database Query Time**: < 100ms
-- **Mobile Performance**: 95+ Lighthouse score
-
----
-
-**Note**: This project demonstrates modern web development practices with ethical data collection. The AI summaries and translations are predefined for demonstration purposes, ensuring responsible use of web scraping technology. Built with ❤️ during the Nexium Internship Program. 
+**Note**: This project demonstrates modern web development practices with ethical data collection. The AI summaries and translations are predefined for demonstration purposes, ensuring responsible use of web scraping technology. Create by Zayyan, during the Nexium Internship Program. 
