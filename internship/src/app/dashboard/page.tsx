@@ -69,6 +69,15 @@ export default function Dashboard() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-black via-gray-900 to-black text-white p-8">
       <div className="max-w-6xl mx-auto">
+        <div className="flex justify-end pt-2 pr-2 mb-4">
+          <a
+            href="/"
+            className="inline-block px-4 py-2 rounded-lg bg-blue-600 hover:bg-blue-700 text-white font-semibold shadow-lg transition-all duration-200"
+            style={{ textDecoration: 'none' }}
+          >
+            ← Back
+          </a>
+        </div>
         <h1 className="text-3xl font-bold mb-8">Database Dashboard</h1>
         
         {error && (
